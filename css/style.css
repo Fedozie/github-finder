@@ -1,0 +1,144 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --primary: hsl(212, 100%, 61%);
+    --secondary: hsl(0, 0%, 65%);
+    --success: hsl(160, 71%, 56%);
+    --info-color: hsl(187, 100%, 57%);
+    --whitesmoke: hsl(0, 0%, 96%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    width: 100%;
+    background-color: var(--primary);
+    padding: 2.3rem;
+}
+
+.container a{
+    color: var(--whitesmoke);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.searchContainer{
+    padding: 2.3rem;
+}
+
+.search{
+    border: 2px solid hsl(0, 0%, 85%);
+    border-radius: 3px;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.search p{
+    color: hsl(0, 0%, 59%);
+}
+
+.search input[type = "text"]{
+    border: 2px solid hsl(0, 0%, 85%);
+    border-radius: 3px;
+    width: 100%;
+    padding: .5rem;
+}
+
+.card-body .row{
+    width: 100%;
+    display: flex;
+}
+
+.col-md-3{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-md-3 .img-fluid{
+    
+}
+
+.col-md-3 a{
+    margin-top: 1rem;
+    background-color: var(--primary);
+    text-decoration: none;
+    color: var(--whitesmoke);
+    border: none;
+    height: 2.8rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-md-9{
+    width: 75%;
+    margin-left: 2rem;
+}
+
+.badge{
+    border: none;
+    border-radius: 3px;
+    color: var(--whitesmoke);
+    height: 1rem;
+    width: 3rem;
+    padding: .3rem;
+}
+
+.badge-primary{
+    background-color: var(--primary);
+}
+
+.badge-secondary{
+    background-color: var(--secondary);
+}
+
+.badge-success{
+    background-color: var(--success);
+}
+
+.badge-info{
+    background-color: var(--info-color);
+}
+
+.col-md-9 .list-group{
+    width: 100%;
+    border: 2px solid hsl(0, 0%, 85%);
+    border-radius: 3px;
+    padding: 0;
+}
+
+.col-md-9 .list-group-item{
+    list-style-type: none;
+    padding: 1.2rem;
+}
+
+.col-md-9 .list-group-item:not(:first-of-type){
+    border-top: 2px solid hsl(0, 0%, 85%);
+}
+
+.alert{
+    background-color: rgb(255, 68, 68);
+    color: var(--whitesmoke);
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+.body .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid hsl(0, 0%, 85%);
+    border-radius: 3px;
+    height: max-content;
+    margin-bottom: 1rem;
+}
